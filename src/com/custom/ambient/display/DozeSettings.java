@@ -27,7 +27,7 @@ import android.support.v14.preference.PreferenceFragment;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.xtended.support.preferences.SystemSettingSwitchPreference;
+import com.msm.xtended.preferences.SystemSettingSwitchPreference;
 
 public class DozeSettings extends PreferenceActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
