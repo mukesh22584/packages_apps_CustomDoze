@@ -47,9 +47,7 @@ public class ProximitySensor implements SensorEventListener {
         mContext = context;
         mSensorManager = (SensorManager)
                 mContext.getSystemService(Context.SENSOR_SERVICE);
-        if (mSensorManager != null) {
-            mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
-        }
+        mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         mExecutorService = Executors.newSingleThreadExecutor();
     }
 
