@@ -9,13 +9,11 @@
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
     <uses-sdk
         android:targetSdkVersion="27"/>
 
     <application
-        android:label="CustomDoze"
+        android:label="OneplusDoze"
         android:persistent="true"
         android:supportsRtl="true">
 
