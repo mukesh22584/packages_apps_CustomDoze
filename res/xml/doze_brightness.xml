@@ -16,14 +16,14 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.xtended.support.preferences.CustomSeekBarPreference
+    <com.msm.xtended.preferences.CustomSeekBarPreference
         android:key="night"
         android:title="@string/night_brightness_value"
         allowEditText="true"
         android:max="255"
         min="1" />
 
-    <com.xtended.support.preferences.CustomSeekBarPreference
+    <com.msm.xtended.preferences.CustomSeekBarPreference
         android:key="low"
         android:title="@string/low_brightness_value"
         allowEditText="true"
@@ -37,7 +37,7 @@
         android:max="255"
         min="1" />
 
-    <com.xtended.support.preferences.CustomSeekBarPreference
+    <com.msm.xtended.preferences.CustomSeekBarPreference
         android:key="sun"
         android:title="@string/sun_brightness_value"
         allowEditText="true"
