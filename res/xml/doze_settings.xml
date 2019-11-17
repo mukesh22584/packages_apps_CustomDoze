@@ -22,7 +22,7 @@
         android:title="@string/aod_setting_title"
         android:summary="@string/aod_setting_summary" />
 
-    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+    <com.colt.settings.preference.SystemSettingSwitchPreference
         android:key="doze_on_charge"
         android:defaultValue="false"
         android:title="@string/doze_on_charge_title"
