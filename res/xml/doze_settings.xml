@@ -16,23 +16,32 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <SwitchPreference
-        android:key="always_on_ambient"
-        android:defaultValue="false"
-        android:title="@string/aod_setting_title"
-        android:summary="@string/aod_setting_summary" />
+    <PreferenceCategory
+        android:title="When to Show"/>
+		
+        <SwitchPreference
+            android:key="always_on_ambient"
+            android:defaultValue="false"
+            android:title="@string/aod_setting_title"
+            android:summary="@string/aod_setting_summary" />
 
-    <com.msm.xtended.preferences.SystemSettingSwitchPreference
-        android:key="doze_on_charge"
-        android:defaultValue="false"
-        android:title="@string/doze_on_charge_title"
-        android:summary="@string/doze_on_charge_summary" />
+        <com.msm.xtended.preferences.SystemSettingSwitchPreference
+            android:key="doze_on_charge"
+            android:defaultValue="false"
+            android:title="@string/doze_on_charge_title"
+            android:summary="@string/doze_on_charge_summary" />
 
-    <SwitchPreference
-        android:key="ambient_display"
-        android:defaultValue="true"
-        android:title="@string/ambient_display_notifications"
-        android:summary="@string/ambient_display_summary" />
+        <SwitchPreference
+            android:key="ambient_display"
+            android:defaultValue="true"
+            android:title="@string/ambient_display_notifications"
+            android:summary="@string/ambient_display_summary" />
+
+        <com.msm.xtended.preferences.SystemSettingSwitchPreference
+            android:key="doze_trigger_doubletap"
+            android:defaultValue="false"
+            android:title="@string/doze_double_tap_title"
+            android:summary="@string/doze_double_tap_summary" />
 
     <PreferenceCategory
         android:key="tilt_sensor"
@@ -61,14 +70,7 @@
             android:defaultValue="false"
             android:title="@string/pocket_gesture_title"
             android:summary="@string/pocket_gesture_summary" />
-
     </PreferenceCategory>
-
-    <com.msm.xtended.preferences.SystemSettingSwitchPreference
-        android:key="doze_trigger_doubletap"
-        android:defaultValue="false"
-        android:title="@string/doze_double_tap_title"
-        android:summary="@string/doze_double_tap_summary" />
 
     <Preference
         android:key="doze_brightness"
@@ -80,3 +82,5 @@
         android:targetClass="com.custom.ambient.display.DozeBrightness" />
     </Preference>
 </PreferenceScreen>
+
+
