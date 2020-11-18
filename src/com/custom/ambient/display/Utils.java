@@ -43,7 +43,6 @@ public final class Utils {
     protected static final String GESTURE_RAISE_TO_WAKE_KEY = "gesture_raise_to_wake";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
-    protected static final String DOUBLE_TAP_KEY = "doze_trigger_doubletap";
     protected static final String SMART_WAKE_KEY = "smart_wake";
 
     protected static void startService(Context context) {
@@ -95,16 +94,6 @@ public final class Utils {
     protected static boolean isDozeEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
                 Settings.Secure.DOZE_ENABLED, 1) != 0;
-    }
-
-    protected static boolean isTapToWakeEnabled(Context context) {
-        return Settings.Secure.getInt(context.getContentResolver(),
-                Settings.Secure.DOUBLE_TAP_TO_WAKE, 0) != 0;
-    }
-
-    protected static boolean isTapToWakeAvailable(Context context) {
-        return context.getResources().getBoolean(
-            com.android.internal.R.bool.config_supportDoubleTapWake);
     }
 
     protected static boolean isProximityScreenWakeEnabled(Context context) {
